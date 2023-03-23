@@ -4,11 +4,13 @@ export const Contact = styled.li`
   display: flex;
 
   gap: 10px;
-  width: 320px;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px;  
   background-color: #f7f7f7;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   button {
     margin-left: auto;

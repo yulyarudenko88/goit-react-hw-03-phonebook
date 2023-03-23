@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Block = styled.div`
-  margin: 0 auto;
-  padding: 10px 20px;
+  &:not(:last-child) {
+  margin-bottom: 20px;
+}
 `;
 
 export const Title = styled.h2`
