@@ -5,6 +5,7 @@ import { Section } from 'components/Section/Section';
 import { AddContactsForm } from 'components/AddContactsForm/AddContactsForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Filter } from 'components/Filter/Filter';
+import { Wrapper } from "./App.styled";
 
 export class App extends Component {
   state = {
@@ -75,7 +76,7 @@ export class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <>
+      <Wrapper>
         <Section title="Phonebook">
           <AddContactsForm onSubmit={this.addContact} />
         </Section>
@@ -86,7 +87,7 @@ export class App extends Component {
             onDeleteContact={this.deleteContact}
           />
         </Section>
-      </>
+      </Wrapper>
     );
   }
 }
